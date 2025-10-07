@@ -6,9 +6,9 @@ public enum BarrelType {
     WOOD,
     METAL;
 
-    private int maxDamage;
-    public int getMaxDamage(){
-        return maxDamage;
+    private int health;
+    public int getHealth(){
+        return health;
     }
     public BarrelType getBarrelType(){
         return BarrelType.values()[this.ordinal()];

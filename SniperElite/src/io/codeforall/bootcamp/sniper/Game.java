@@ -6,13 +6,13 @@ public class Game {
     private int numObjects = 10;
     private SniperRifle sniperRifle;
     private int shotsFired;
-    private int armourScore = 80;
+    private int armour = 80;
 
 
     public Game() {
-        gameObjects = new GameObject[numObjects];
-        sniperRifle = new SniperRifle();
-    }
+    gameObjects = new GameObject[numObjects];
+    sniperRifle = new SniperRifle();
+}
 
     public void start() {
         createObject(numObjects);
@@ -61,7 +61,7 @@ public class Game {
 
 
             } else if (shootOrNotShoot == 1) {
-                gameObjects[i] = new ArmouredEnemy(100, armourScore);
+                gameObjects[i] = new ArmouredEnemy(100, armour);
                 //System.out.println("entrou enemy armoured "+gameObjects[i]);
 
             } else if (shootOrNotShoot == 2) {

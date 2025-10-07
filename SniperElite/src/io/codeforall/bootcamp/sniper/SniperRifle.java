@@ -19,7 +19,7 @@ public class SniperRifle {
             target.hit(bulletDamage * HIT_PROB);
 
         } else{
-            System.out.println("You missed the shot by lack of power!");
+            System.out.println(" x - You missed the shot by lack of power!");
         }
     }
 }
